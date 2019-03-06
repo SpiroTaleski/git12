@@ -1,0 +1,426 @@
+{
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 8,
+    "link_map": {
+        "link100": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_view_id": "output0"
+        },
+        "link101": {
+            "dst_id": "11111111-1111-1111-1111-000000000001",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output0"
+        },
+        "link106": {
+            "dst_id": "11111111-1111-1111-1111-000000000000",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "simona.todoroska@wowinc.com"
+            },
+            "label": {},
+            "notes": {
+                "value": null
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {
+            "11111111-1111-1111-1111-000000000002_input0": {
+                "label": {
+                    "value": "Map pipeline names - input0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "output": {
+            "11111111-1111-1111-1111-000000000000_output0": {
+                "label": {
+                    "value": "Check if pipeline name is not null - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "settings": {
+            "error_param_table": {
+                "value": []
+            },
+            "error_pipeline": {
+                "expression": false,
+                "value": null
+            },
+            "imports": {
+                "value": []
+            },
+            "param_table": {
+                "value": [
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "key": {
+                            "value": "pipeline_name"
+                        },
+                        "value": {
+                            "value": "SUB_JournalEntry_ICOMS_NetSuite,SUB_JournalEntry_USHA_NetSuite,SUB_ACH&CreditCardPayments_EML_NetSuite,SUB_ApprovedCapitalProjects_NetSuite_PART,SUB_GS737_Payroll_JournalEntry_ADP_NetSuite,SUB_PositivePay_AvidXchange_WellsFargo,SUB_VendorBillInvoice_TEOCO_NetSuite,SUB_ApprovedJobRequests_PART_Netsuite,SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 1,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 1,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 1,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 1,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            }
+        },
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-flow-filter",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Check if pipeline name is not null"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "filterExpression": {
+                        "expression": true,
+                        "value": "$pipelineName != null"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Map pipeline name"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": true
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('POSPAY') && $splitValue == \"SUB_PositivePay_AvidXchange_WellsFargo\") ? \"SUB_PositivePay_AvidXchange_WellsFargo\" :  ($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_GS135') && $splitValue==\"SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite\" ? \"SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite\" :  ($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_GS730') && $splitValue==\"SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite\" ? \"SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite\" :  ($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_GS731') && $splitValue==\"SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite\" ? \"SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite\" :  ($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_GS802') && $splitValue==\"SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite\" ? \"SUB_TelcoAccruals_JournalEntry_TEOCO_NetSuite\" :  ($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_AccrualCalculation') && $splitValue==\"SUB_AccrualsCalculations_TEOCO_NetSuite\" ? \"SUB_AccrualsCalculations_TEOCO_NetSuite\" :   ($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('NS_Capital Projects') && $splitValue==\"SUB_ApprovedCapitalProjects_NetSuite_PART\" ? \"SUB_ApprovedCapitalProjects_NetSuite_PART\" :  ($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('Unicorn') && $splitValue==\"SUB_JournalEntry_USHA_NetSuite\"? \"SUB_JournalEntry_USHA_NetSuite\" :  ($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('PART_Job Details') && $splitValue==\"SUB_ApprovedJobRequests_PART_Netsuite\"? \"SUB_ApprovedJobRequests_PART_Netsuite\" :  (($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('POSPAY') == false && $['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_GS135') == false && $['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_GS730') == false && $['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_GS731') == false && $['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_GS802') == false && $['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('TEOCO_AccrualCalculation') == false && $['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('PART_Job Details') == false && $['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('NS_Capital Projects') == false && $['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('Unicorn') == false && $splitValue.contains($['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].substring(0,$['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].indexOf('_'))) && $splitValue.contains('Accrual') == false ) ? $splitValue : null)))))))))"
+                                        },
+                                        "targetPath": {
+                                            "value": "$pipelineName"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$['soapenv:Body'].searchResponse['platformCore:searchResult']['platformCore:recordList']['platformCore:record']['docFileCab:name'].contains('POSPAY') && $splitValue==\"SUB_PositivePay_AvidXchange_WellsFargo\""
+                                        },
+                                        "targetPath": {
+                                            "value": "$test"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Map pipeline names"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": true
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "_pipeline_name.split(',')"
+                                        },
+                                        "targetPath": {
+                                            "value": "$pipelineName[*]"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-transform-jsonsplitter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Split group of pipeline names"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "includeParents": {
+                        "value": false
+                    },
+                    "includePaths": {
+                        "value": [
+                            {
+                                "includePath": {
+                                    "value": "$['soapenv:Body']"
+                                }
+                            }
+                        ]
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "path": {
+                        "value": "$pipelineName[*]"
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    }
+}

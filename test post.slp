@@ -1,0 +1,729 @@
+{
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 8,
+    "link_map": {
+        "link103": {
+            "dst_id": "11111111-1111-1111-1111-000000000005",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output0"
+        },
+        "link104": {
+            "dst_id": "11111111-1111-1111-1111-000000000004",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        },
+        "link105": {
+            "dst_id": "11111111-1111-1111-1111-000000000006",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000005",
+            "src_view_id": "output0"
+        },
+        "link106": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000006",
+            "src_view_id": "output0"
+        },
+        "link107": {
+            "dst_id": "11111111-1111-1111-1111-000000000007",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000004",
+            "src_view_id": "output0"
+        },
+        "link108": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000007",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "metodija.jadroski@wowinc.com"
+            },
+            "label": {},
+            "notes": {
+                "value": null
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {},
+        "output": {
+            "11111111-1111-1111-1111-000000000002_output0": {
+                "label": {
+                    "value": "Mapper - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
+            "11111111-1111-1111-1111-000000000003_output0": {
+                "label": {
+                    "value": "Mapper - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "settings": {
+            "imports": {
+                "value": []
+            },
+            "param_table": {
+                "value": []
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 2,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 2,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000004": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000005": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 2,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000006": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 2,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000007": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            }
+        },
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-transform-jsongenerator",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "JSON Generator"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "arrayElementsAsDocuments": {
+                        "value": true
+                    },
+                    "editable_content": {
+                        "value": "[{\"pi:Header\":{\"pi:All_Effective\":{\"Value\":\"false\"},\"pi:Document_Retention_Policy\":{\"Value\":\"90\"},\"pi:Pay_Group_Id\":{\"Value\":\"AMS_001_1W_B_GBR\"},\"pi:Pay_Group_Name\":{\"Value\":\"Arriva The Shires - Weekly\"},\"pi:Pay_Period_End\":{\"Value\":\"2017-08-05-07:00\"},\"pi:Pay_Period_Start\":{\"Value\":\"2017-07-30-07:00\"},\"pi:Payroll_Company_ID\":{\"Value\":\"AMS\"},\"pi:Payroll_Company_Name\":{\"Value\":\"Arriva Midlands South\"},\"pi:Updated_From\":{\"Value\":\"2017-08-24T08:31:21.635-07:00\"},\"pi:Updated_To\":{\"Value\":\"2017-08-31T03:48:28.251-07:00\"},\"pi:Version\":{\"Value\":\"25\"},\"EmployeeSet\":2},\"pi:Employee\":[{\"pi:Summary\":{\"pi:Employee_ID\":\"106189\",\"pi:Name\":\"Aaron Tibbett\",\"pi:Payroll_Company_ID\":\"AMS\",\"pi:Payroll_Company_Name\":\"Arriva Midlands South\",\"pi:Pay_Group_ID\":\"AMS_001_1W_B_GBR\",\"pi:Pay_Group_Name\":\"Arriva The Shires - Weekly\",\"pi:Contain_Corrections_or_Rescinds\":\"false\"},\"pi:Personal\":{\"pi:First_Name\":\"Aaron\",\"pi:Last_Name\":\"Tibbett\",\"pi:Title\":\"Mr\",\"pi:Gender\":\"Male\",\"pi:Birth_Date\":\"18121983\",\"pi:First_Address_Line_Data\":{\"@pi:Label\":\"Address Line 1\",\"@pi:Type\":\"ADDRESS_LINE_1\",\"$\":\"28 Muirfield\"},\"pi:First_Municipality\":\"Luton\",\"pi:First_Region\":\"Bedfordshire\",\"pi:First_Postal_Code\":\"LU2 7SB\",\"pi:Second_Email_Address\":\"tibbetta@arriva.co.uk\"},\"pi:Status\":{\"pi:Staffing_Event\":{\"@pi:PriorValue\":\"\",\"$\":\"PGI\"},\"pi:Staffing_Event_Date\":{\"@pi:PriorValue\":\"\",\"$\":\"01082017\"},\"pi:Hire_Date\":\"20092004\",\"pi:Hire_Reason\":\"Hire_Employee_Hire\",\"pi:Continuous_Service_Date\":\"20092004\"},\"pi:Position\":{\"pi:Operation\":\"ADD\",\"pi:Position_ID\":{\"@pi:PriorValue\":\"\",\"$\":\"P-000032\"},\"pi:Primary_Job\":{\"@pi:PriorValue\":\"\",\"$\":\"1\"},\"pi:Business_Title\":{\"@pi:PriorValue\":\"\",\"$\":\"Field Publicity Officer\"},\"pi:Worker_Type\":{\"@pi:PriorValue\":\"\",\"$\":\"EMP1_Standard\"},\"pi:Position_Time_Type\":{\"@pi:PriorValue\":\"\",\"$\":\"Full_time\"},\"pi:Scheduled_Weekly_Hours\":{\"@pi:PriorValue\":\"\",\"$\":\"37.5\"},\"pi:Default_Weekly_Hours\":{\"@pi:PriorValue\":\"\",\"$\":\"37.5\"},\"pi:Organization_One\":{\"@pi:PriorValue\":\"\",\"$\":\"051051\"},\"pi:Organization_Two\":{\"@pi:PriorValue\":\"\",\"$\":\"SO_437\"},\"pi:Organization_Three\":{\"@pi:PriorValue\":\"\",\"$\":\"AMS_001_1W_B_GBR\"},\"pi:Work_Shift\":{\"@pi:PriorValue\":\"\",\"$\":\"GBR_WS_5Days\"},\"pi:Business_Site\":{\"@pi:PriorValue\":\"\",\"$\":\"LOC_GBR_0132\"},\"pi:Business_Site_Postal_Code\":{\"@pi:PriorValue\":\"\",\"$\":\"LU4 8DS\"}},\"pi:Identifier\":[{\"pi:Operation\":\"NONE\",\"pi:Identifier_Type\":\"NI Number\",\"pi:Identifier_Value\":\"JW104109B\"},{\"pi:Operation\":\"ADD\",\"pi:Identifier_Type\":{\"@pi:PriorValue\":\"\",\"$\":\"UK_AMS_Arriva_Midlands_South\"},\"pi:Identifier_Value\":{\"@pi:PriorValue\":\"\",\"$\":\"99900644\"}}],\"pi:Payment_Election\":{\"pi:Operation\":\"NONE\",\"pi:Account_Number\":\"60327982\",\"pi:Bank_Name\":\"Bank Name\",\"pi:Bank_ID_Number\":\"700831\"},\"pi:Additional_Information\":{\"pi:Preferred_First_Name\":\"Aaron\",\"pi:Step_Name_Ref_ID\":\"DM1_AMS\",\"pi:Home_Mobile_International_Phone_Code\":\"44\",\"pi:Home_Mobile_Phone_Number\":\"7976622630\",\"pi:Company_Reference_ID\":\"C_051\"},\"pi:EmployeeSet\":{\"Value\":2}}]}]"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-transform-jsongenerator",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "JSON Generator"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "arrayElementsAsDocuments": {
+                        "value": true
+                    },
+                    "editable_content": {
+                        "value": "[{\"pi:Header\":{\"pi:All_Effective\":{\"Value\":\"false\"},\"pi:Document_Retention_Policy\":{\"Value\":\"90\"},\"pi:Pay_Group_Id\":{\"Value\":\"AMS_001_1W_B_GBR\"},\"pi:Pay_Group_Name\":{\"Value\":\"Arriva The Shires - Weekly\"},\"pi:Pay_Period_End\":{\"Value\":\"2017-08-05-07:00\"},\"pi:Pay_Period_Start\":{\"Value\":\"2017-07-30-07:00\"},\"pi:Payroll_Company_ID\":{\"Value\":\"AMS\"},\"pi:Payroll_Company_Name\":{\"Value\":\"Arriva Midlands South\"},\"pi:Updated_From\":{\"Value\":\"2017-08-24T08:31:21.635-07:00\"},\"pi:Updated_To\":{\"Value\":\"2017-08-31T03:48:28.251-07:00\"},\"pi:Version\":{\"Value\":\"25\"},\"EmployeeSet\":2},\"pi:Employee\":[{\"pi:Summary\":{\"pi:Employee_ID\":\"109414\",\"pi:Name\":\"Robert Sutton\",\"pi:Payroll_Company_ID\":\"AMS\",\"pi:Payroll_Company_Name\":\"Arriva Midlands South\",\"pi:Pay_Group_ID\":\"AMS_001_1W_B_GBR\",\"pi:Pay_Group_Name\":\"Arriva The Shires - Weekly\",\"pi:Contain_Corrections_or_Rescinds\":\"false\"},\"pi:Personal\":{\"pi:First_Name\":\"Robert\",\"pi:Middle_Name\":\"James\",\"pi:Last_Name\":\"Sutton\",\"pi:Title\":\"Mr\",\"pi:Gender\":\"Male\",\"pi:Birth_Date\":\"06021966\",\"pi:First_Address_Line_Data\":[{\"@pi:Label\":\"Address Line 1\",\"@pi:Type\":\"ADDRESS_LINE_1\",\"$\":\"115 Bude Crescent\"},{\"@pi:Label\":\"Address Line 2\",\"@pi:Type\":\"ADDRESS_LINE_2\",\"$\":\"Stevenage\"}],\"pi:First_Municipality\":\"Herts\",\"pi:First_Postal_Code\":\"SG1 2QP\"},\"pi:Status\":{\"pi:Hire_Date\":\"06072015\",\"pi:Hire_Reason\":\"Hire_Employee_Hire\",\"pi:Continuous_Service_Date\":\"06072015\"},\"pi:Position\":{\"pi:Operation\":\"NONE\",\"pi:Position_ID\":\"J-109414\",\"pi:Primary_Job\":\"1\",\"pi:Business_Title\":\"Skilled Fitter\",\"pi:Worker_Type\":\"EMP1_Standard\",\"pi:Position_Time_Type\":\"Full_time\",\"pi:Scheduled_Weekly_Hours\":\"39\",\"pi:Default_Weekly_Hours\":\"39\",\"pi:Organization_One\":\"051057\",\"pi:Organization_Two\":\"SO_347\",\"pi:Organization_Three\":\"AMS_001_1W_B_GBR\",\"pi:Business_Site\":\"LOC_GBR_0185\",\"pi:Business_Site_Postal_Code\":\"SG1 3BA\"},\"pi:Identifier\":[{\"pi:Operation\":\"NONE\",\"pi:Identifier_Type\":\"NI Number\",\"pi:Identifier_Value\":\"NH499170A\"},{\"pi:Operation\":\"NONE\",\"pi:Identifier_Type\":\"UK_AMS_Arriva_Midlands_South\",\"pi:Identifier_Value\":\"201652\"}],\"pi:Payment_Election\":[{\"pi:Operation\":\"REMOVE\",\"pi:Account_Number\":\"56006672\",\"pi:Roll_Number\":\"00075824\",\"pi:Bank_Name\":\"Bank Name\",\"pi:Bank_ID_Number\":\"110876\"},{\"pi:Operation\":\"ADD\",\"pi:Account_Number\":{\"@pi:PriorValue\":\"\",\"$\":\"22200011\"},\"pi:Roll_Number\":{\"@pi:PriorValue\":\"\",\"$\":\"00075824\"},\"pi:Bank_Name\":{\"@pi:PriorValue\":\"\",\"$\":\"TestHalifax Bank\"},\"pi:Bank_ID_Number\":{\"@pi:PriorValue\":\"\",\"$\":\"222000\"}}],\"pi:Additional_Information\":{\"pi:Preferred_First_Name\":\"Robert\",\"pi:Step_Name_Ref_ID\":\"EN05_AMS\",\"pi:Home_Landline_International_Phone_Code\":\"44\",\"pi:Home_Landline_Phone_Number\":\"1438364565\",\"pi:Home_Mobile_International_Phone_Code\":\"44\",\"pi:Home_Mobile_Phone_Number\":\"7401300036\",\"pi:Company_Reference_ID\":\"C_102\"},\"pi:EmployeeSet\":{\"Value\":2}}]}]"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$test"
+                                        },
+                                        "targetPath": {
+                                            "value": "$test"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$test.hasOwnProperty(\"$\") ? true : false"
+                                        },
+                                        "targetPath": {
+                                            "value": "$test"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000004": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000004",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "jsonPath($, \"$['pi:Employee'][*]['pi:Identifier'][*]['pi:Identifier_Value']\")"
+                                        },
+                                        "targetPath": {
+                                            "value": "$test"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000005": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000005",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "jsonPath($, \"$['pi:Employee'][*]['pi:Identifier'][*]['pi:Identifier_Value']\")"
+                                        },
+                                        "targetPath": {
+                                            "value": "$test"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000006": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "jsonPath($, \"$test[*]\").pop()"
+                                        },
+                                        "targetPath": {
+                                            "value": "$test"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000007": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "jsonPath($, \"$test[*]\").pop()"
+                                        },
+                                        "targetPath": {
+                                            "value": "$test"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    }
+}
